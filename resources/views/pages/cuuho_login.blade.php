@@ -17,16 +17,16 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="{{URL::to('/dangbai')}}" class="sign-in-form" >
+          <form action="{{URL::to('/danhsachcancuuho')}}" class="sign-in-form" >
             {{ csrf_field() }}
-            <h2 class="title">ĐĂNG NHẬP KHÁCH HÀNG</h2>
+            <h2 class="title">ĐĂNG NHẬP CỨU HỘ</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="khachhang_email" placeholder="Tên tài khoản" />
+              <input type="text" name="cuuho_email" placeholder="Tên tài khoản" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" name="khachhang_password" placeholder="Mật khẩu" />
+              <input type="password" name="cuuho_password" placeholder="Mật khẩu" />
             </div>
             <input type="submit" value="ĐĂNG NHẬP" class="btn solid" />
             <p class="social-text">Đăng nhập bằng phương thức khác</p>
@@ -48,24 +48,16 @@
 
           <!-- -------------------- -->
 
-          <form action="{{URL::to('/dangkykhachhang')}}" class="sign-up-form" >
+          <form style="margin-top: 5rem" action="{{URL::to('/dangkycuuho')}}" class="sign-up-form" >
             {{ csrf_field() }}
             <h2 class="title">Đăng ký</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="Ten_KH" placeholder="Tên Khách Hàng" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" name="CMND" placeholder="CMND" />
+              <input type="text" name="Ten_DVCH" placeholder="Tên Đơn Vị" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" name="Email"  placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="text" name="SDT" placeholder="Số điện thoại" />
+              <input type="email" name="Email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
@@ -73,14 +65,41 @@
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password"  name="Mat_Khau" placeholder="Mật Khẩu" />
-            </div> 
-            
+              <input type="text" name="SDT" placeholder="Số điện thoại" />
+            </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password"  name="Mat_Khau_repeat" placeholder="Nhập Lại Mật khẩu" />
+              <input type="text" name="Nghiep_Vu" placeholder="Nghiệp vụ" />
             </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="text" name="Giay_Phep" placeholder="Giấy phép kinh doanh (có | không)" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="Mat_Khau" placeholder="Mật khẩu" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="Mat_Khau_repeat" placeholder="Mật lại khẩu" />
+            </div>
+            
             <input type="submit" class="btn" value="Đăng ký" />
+            <p class="social-text">Đăng nhập bằng phương thức khác</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
           </form>
         </div>
       </div>

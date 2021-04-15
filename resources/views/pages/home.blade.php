@@ -158,7 +158,6 @@
                     <a href="#"><img src="{{('public/frontend/images/app2.png')}}" alt="" class="app__store"></a>
                 </div>
             </div>
-
             <img src="{{('public/frontend/images/webapp.PNG')}}" alt="" class="app__img">
         </div>
     </section>

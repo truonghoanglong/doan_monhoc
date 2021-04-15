@@ -53,6 +53,7 @@
             <input type="submit" value="SUBMIT" class="btn solid" />
             
             </div>
+            <a href="{{URL::to('/hienthidangbai')}}">Xem các yêu cầu cứu hộ của tôi</a>
           </form>
 
           <!-- -------------------- -->
