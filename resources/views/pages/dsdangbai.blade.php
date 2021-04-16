@@ -1,4 +1,5 @@
-
+@extends('layout')    
+@section('content')
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 80%;
+  margin: 50px 0 0 100px;
 }
 
 td, th {
@@ -65,3 +67,5 @@ tr:nth-child(even) {
 
 </body>
 </html>
+
+@endsection

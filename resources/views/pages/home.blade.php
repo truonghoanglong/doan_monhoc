@@ -9,7 +9,7 @@
             <div class="home__data">
                 <h1 class="home__title">LTH cứu hộ</h1>
                 <h2 class="home__subtitle">Nếu bạn gặp sự cố về xe <br> hãy liên hệ với chúng tôi <br> hoặc gọi trực tiếp qua số 117</h2>
-                <a href="login.html" class="button">Đăng ký và đăng nhâp cứu hộ</a>
+                <a href="{{URL::to('/khachhang')}}" class="button">Đăng ký và đăng nhập cứu hộ</a>
                 <!-- <a href="login.html" class="button">Đăng nhập</a> -->
                 <a href="chang.html" class="button">Thay đổi mật khẩu</a>
             </div>
@@ -25,7 +25,7 @@
                 <span class="section-subtitle about__initial">Trở thành đối tác</span>
                 <h2 class="section-title about__initial">Nếu bạn có nhu cầu trở<br>thành đối tác với chúng tôi</h2>
                 <p class="about__description">Các bạn là những nhà cứu hộ sửa xe và muốn trở thành đối tác với chúng tôi hãy đăng ký theo mẫu mà chúng tôi cung cấp bên theo đường dẫn bên dưới.</p>
-                <a href="hieulogin.html" class="button">Đăng ký và đăng nhập đối tác</a>
+                <a href="{{URL::to('/donvicuuhol')}}" class="button">Đăng ký và đăng nhập đối tác</a>
                 
                 <a href="hieuchang.html" class="button">Thay đổi mk</a>
             </div>

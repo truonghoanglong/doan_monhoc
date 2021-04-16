@@ -1,3 +1,6 @@
+@extends('layout')    
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" style="text-align: center;padding:5px;">
+    <table border="1" style="text-align: center;padding:5px; margin: 100px 0 0 200px;">
         <tr>
           <th>MÃ KHÁCH HÀNG</th>
           <th>Mô Tả</th>
@@ -25,7 +28,7 @@
             <td>{{$inforDonHang->image}}</td>
             <td>{{date("m/d/Y", strtotime($inforDonHang->Ngay_DangBai))}}</td>
             <td class="text-center">
-              <button><a href='{{URL::to("/xacnhan?Ma_Dangbai=$inforDonHang->Ma_Dangbai")}}'>Xác nhận chọn thằng này</a></button>
+              <button style="color:aqua; "><a href='{{URL::to("/xacnhan?Ma_Dangbai=$inforDonHang->Ma_Dangbai")}}'>Xác nhận chọn khách hàng</a></button>
             </td>
           </tr>
        
@@ -33,3 +36,5 @@
   
 </body>
 </html>
+
+@endsection

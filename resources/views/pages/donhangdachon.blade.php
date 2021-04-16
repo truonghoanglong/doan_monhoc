@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +25,7 @@ tr:nth-child(even) {
 <body>
 <h2>DANH SÁCH CÁC KHÁCH HÀNG BẠN NHẬN CỨU HỘ</h2>
 <a href="{{URL::to('/danhsachcancuuho')}}">Danh sách cứu hộ</a>
-<table>
+<table style="margin: 50px 0 0 50px">
   <tr>
     <th>STT</th>
     <th>Tên Khách Hàng</th>
