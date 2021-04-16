@@ -1,7 +1,6 @@
 @extends('layout')    
 @section('content')
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,14 +21,17 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-h2,a,table{
+h2,table{
+  padding: 200px 0 0 200px;
+}
+.a{
   padding: 200px 0 0 200px;
 }
 </style>
 </head>
 <body>
 <h2>DANH SÁCH CÁC BÀI ĐĂNG CỨU HỘ</h2>
-<a href="{{URL::to("/danhsachdachon")}}">Các cuốc cứu hộ tôi đã nhận</a>
+<a class="a" href="{{URL::to("/danhsachdachon")}}">Các cuốc cứu hộ tôi đã nhận</a>
 <table style="margin-left: 200px">
   <tr>
     <th>STT</th>
